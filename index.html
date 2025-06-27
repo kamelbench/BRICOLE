@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BRICOLE</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+    }
+    header {
+      background-color: #111;
+      padding: 1rem;
+      text-align: center;
+      border-bottom: 1px solid #444;
+    }
+    header img {
+      height: 80px;
+      margin-bottom: 0.5rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      background-color: #222;
+      padding: 0.8rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1581090700227-1e8f251b291c') center/cover no-repeat;
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .section {
+      padding: 2rem;
+      text-align: center;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .card {
+      background-color: #1a1a1a;
+      color: #fff;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.05);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    form {
+      max-width: 400px;
+      margin: 2rem auto;
+      background-color: #1a1a1a;
+      padding: 2rem;
+      border-radius: 10px;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #ffcc00;
+      color: #000;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="sandbox:/mnt/data/A_logo_displays_the_word_"BRICOLE"_in_uppercase_le.png" alt="BRICOLE Logo">
+    <h1>BRICOLE</h1>
+    <p>كراء المعدات والأدوات بسهولة وسرعة</p>
+  </header>
+
+  <nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#clients">الزبائن</a>
+    <a href="#owners">أصحاب المعدات</a>
+    <a href="#categories">الأقسام</a>
+    <a href="#booking">الحجز</a>
+    <a href="#login">تسجيل الدخول</a>
+    <a href="#guarantee">الضمان</a>
+    <a href="#contact">اتصل بنا</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <h2>أطلب أو أكرِ معداتك أينما كنت</h2>
+    <p>خدمة سريعة، دفع عند التسليم، وضمان مؤقت وتقييمات حقيقية</p>
+  </section>
+
+  <section class="section" id="booking">
+    <h2>نموذج الحجز</h2>
+    <form>
+      <input type="text" placeholder="الاسم الكامل" required>
+      <input type="tel" placeholder="رقم الهاتف" required>
+      <select required>
+        <option>اختر نوع المعدات</option>
+        <option>معدات بناء</option>
+        <option>معدات فلاحية</option>
+        <option>معدات تنظيف</option>
+        <option>معدات حفلات</option>
+        <option>معدات منزلية</option>
+      </select>
+      <textarea placeholder="تفاصيل إضافية (اختياري)"></textarea>
+      <button type="submit">إرسال الطلب</button>
+    </form>
+  </section>
+
+  <section class="section" id="login">
+    <h2>تسجيل الدخول</h2>
+    <form>
+      <input type="email" placeholder="البريد الإلكتروني" required>
+      <input type="password" placeholder="كلمة المرور" required>
+      <button type="submit">دخول</button>
+    </form>
+  </section>
+
+  <section class="section" id="clients">
+    <h2>هل أنت زبون؟</h2>
+    <p>اكتشف المعدات المتاحة للكراء، اطلبها الآن، وسنقوم بتوصيلها إليك بسرعة.</p>
+  </section>
+
+  <section class="section" id="owners">
+    <h2>هل تملك معدات؟</h2>
+    <p>سجّل معداتك على BRICOLE وابدأ في تأجيرها وجني الأرباح.</p>
+  </section>
+
+  <section class="section" id="guarantee">
+    <h2>نظام الضمان</h2>
+    <p>نقدم ضمانًا مؤقتًا يغطي مدة كراء المعدات لتأمين حقوق الطرفين.</p>
+    <p>يتم حجز مبلغ تأميني صغير يُسترجع بعد انتهاء مدة الكراء في حال عدم وجود أضرار.</p>
+    <p>يساعد الضمان في تعزيز الثقة بين الزبائن وأصحاب المعدات.</p>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>اتصل بنا</h2>
+    <p>📞 0555 123 456</p>
+    <p>✉️ contact@bricoleshop.dz</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 BRICOLE. جميع الحقوق محفوظة.</p>
+  </footer>
+</body>
+</html>
